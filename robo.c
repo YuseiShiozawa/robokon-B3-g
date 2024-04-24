@@ -1,4 +1,3 @@
-
 #include <AFMotor.h>  
 
 AF_DCMotor motor1(3);  // モーター①をモーター端子3に接続
