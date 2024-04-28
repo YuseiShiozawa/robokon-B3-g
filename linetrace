@@ -1,0 +1,16 @@
+int pin0 = 0; //
+int pin1 = 1;
+void setup() {
+Serial.begin(9600) ;
+}
+void loop() {
+int val0, val1;
+val0 = analogRead(pin0); //アナログ1番ピンからセンサ値を読み込み
+val1 = analogRead(pin1);
+Serial.println("PINA0: ");
+Serial.println(val0); // シリアルモニターへ表示
+Serial.println("PINA1: ");
+Serial.println(val1);
+
+delay(1000) ; // 100ms待つ
+}
